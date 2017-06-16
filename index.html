@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Informatics Lab Open Data</title>
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.2/css/bulma.css" rel="stylesheet" type="text/css">
+  <meta name="author" content="">
+  <script src="https://use.fontawesome.com/b1c3c54518.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <!-- Informatics header -->
+  <nav class="nav hero is-default has-shadow" id="top" style="background-color: #2A2A2A">
+      <div class="container">
+        <div class="nav-left">
+          <a class="nav-item" href="http://metoffice.gov.uk">
+            <img src="http://informaticslab.co.uk/img/mo-logo.svg" style="width: 131px; height:41px;" alt="Met Office" />
+          </a>
+          <a class="nav-item" href="http://informaticslab.co.uk">
+            <p style="font-size: 24px; font-family: Emeric, HelveticaNeue, Helvetica">Informatics Lab</p>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+  <!-- Primary header -->
+      <section class="section">
+        <div class="container">
+          <div class="columns">
+            <div class="column is-6">
+              <h1 class="title is-2" style="font-family: Cabin, sans-serif; font-size: 3em">Informatics Lab Open Data</h2>
+              <p>We've published 80TB of meteorological data on AWS S3. Here are some tools, documentation and notebooks to help make use of this data.</p>
+            </div>
+          </div class="columns">
+          <div class="columns">
+            <div class="column">
+              <a class="button is-info is-outlined" href="#documentation">
+                <span class="icon is-small"><i class="fa fa-book"></i></span>
+                <span>Documentation</span>
+              </a>
+              <a class="button is-info is-outlined" href="#discovery">
+                <span class="icon is-small"><i class="fa fa-search"></i></span>
+                <span>Data Discovery</span>
+              </a>
+              <a class="button is-info is-outlined" href="#jade">
+                  <span class="icon is-small"><i class="fa fa-cloud"></i></span>
+                  <span>Cloud Processing</span>
+              </a>
+              <a class="button is-success is-outlined" href="http://informaticslab.co.uk">
+                <span class="icon is-small"><i class="fa fa-flask"></i></span>
+                <span>About Us</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="documentation" class="section" style="background-color: rgba(230, 233, 237, 0.2)">
+        <div class="container">
+        <h2 class="title">
+          Documentation
+        </h2>
+        <div class="columns is-multiline">
+          <div class="column is-half">
+            <div class="card">
+              <div class="card-content">
+              <p class="subtitle">Loading Data</p>
+              <p>Downloading and loading data. We look at the libraries netcdf4-python, Iris and xarray.</p>
+            </div>
+            <footer class="card-footer">
+              <a class="card-footer-item is-white button" href="./forecast_percentiles.html">
+                <span class="icon is-small is-pulled-right"><i class="fa fa-arrow-right"></i></span>
+              </a>
+            </footer>
+            </div>
+          </div>
+          <div class="column is-half">
+            <div class="card">
+              <div class="card-content">
+              <p class="subtitle">Plotting Data</p>
+              <p>Some examples of visualising data, using libraries like matplotlib and holoviews.</p>
+            </div>
+            <footer class="card-footer">
+              <a class="card-footer-item is-white button" href="./forecast_percentiles.html">
+                <span class="icon is-small is-pulled-right"><i class="fa fa-arrow-right"></i></span>
+              </a>
+            </footer>
+            </div>
+          </div>
+          <div class="column is-half">
+            <div class="card">
+              <div class="card-content">
+              <p class="subtitle">Distributed processing</p>
+              <p>Using dask to process multiple files</p>
+            </div>
+            <footer class="card-footer">
+              <a class="card-footer-item is-white button" href="./forecast_percentiles.html">
+                View Notebook
+              </a>
+              <a class="card-footer-item is-white button" href="./forecast_percentiles.html">
+                Download Notebook
+              </a>
+            </footer>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+
+
+        <section class="hero is-medium is-info is-bold" id="discovery">
+          <div class="hero-body">
+            <div class="container">
+              <h2 class="title">
+                Discover MOGREPS
+              </h2>
+
+              <h3 class="subtitle">
+                80TB of ensemble forecasts
+              </h3>
+            </div>
+          </div>
+        </section>
+
+        <section class="hero is-medium is-primary is-bold" id="jade">
+          <div class="hero-body">
+            <div class="container">
+              <h2 class="title">
+                Cloud computing
+              </h2>
+              <h3 class="subtitle">
+                Real time data science on large datasets.
+              </h3>
+              <p>We use an open source software stack combining Jupyter Notebooks with Dask clusters.</p>
+              <p>Our Jade platform brings these components together in your browser, and is currently in early alpha.</p>
+            </div>
+          </div>
+        </section>
+
+
+
+<!-- End Document -->
+</body>
+</html>
+
+<body>
+
